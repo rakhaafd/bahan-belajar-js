@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cek tipe data</title>
+  </head>
+  <body>
+    <script>
+      let userInput = prompt("ketikkan inputan anda");
+      function cekTipeData(n) {
+        switch (typeof n) {
+          case "string":
+            alert('ini adalah string');
+            break;
+          case "boolean":
+            alert('ini adalah boolean');
+            break;
+          case "number":
+            alert('ini adalah number');
+            break;
+          default:
+            alert("tidak masuk kategori");
+            break;
+        }
+      }
+      cekTipeData(userInput)
+    </script>
+  </body>
+</html>

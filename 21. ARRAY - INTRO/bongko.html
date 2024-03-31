@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userInput = prompt('Masukkan nilai:');
+
+if (userInput.toLowerCase() === 'true' || userInput.toLowerCase() === 'false') {
+    alert('Ini adalah boolean');
+} else if (!isNaN(parseFloat(userInput))) {
+    alert('Ini adalah number');
+} else if (userInput[0] === '"' && userInput[userInput.length - 1] === '"') {
+    alert('Ini adalah string');
+} else if (userInput.toLowerCase() === 'null') {
+    alert('Ini adalah null');
+} else if (userInput.toLowerCase() === 'undefined') {
+    alert('Ini adalah undefined');
+} else if (userInput.toLowerCase() === 'object') {
+    alert('Ini adalah object');
+} else if (userInput.toLowerCase() === 'function') {
+    alert('Ini adalah function');
+} else {
+    alert('Tipe data tidak dikenali');
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const input = prompt("masukkan angka");
+      const banding = prompt("masukkan angka yang ingin dibandingkan");
+      document.body.innerHTML =
+        input == banding
+          ? `<h1>anda memasukkkan angka ${input}, dan membandingkannya dengan ${banding} dan hasilnya adalah benar</h1>`
+          : `<h1>anda memasukkkan angka ${input}, dan membandingkannya dengan ${banding} dan hasilnya adalah salah</h1>`;
+    </script>
+  </body>
+</html>
